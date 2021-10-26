@@ -1,0 +1,283 @@
+.hero {
+    background-image: url('../../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: clip;
+    .container {
+        padding: 40px 0 240px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 553px;
+            height: 440px;
+            background-image: url('../../images/leaf-hero.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 71%;
+            left: 67%;
+        }
+    }
+    &__content {
+        color: $color-001;
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        > img {
+            width: 135px;
+        }
+        h1 {
+            margin: 55px 0 120px;
+        }
+        .slogan {
+            font-style: italic;
+            font-family: $font-002;
+            font-size: $font-lg;
+            font-weight: 600;
+            letter-spacing: 6px;
+        }
+        .btn {
+            margin: 65px 0 30px;
+        }
+        p {
+            max-width: 475px;
+            font-style: italic;
+        }
+    }
+}
+
+.details {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 50px;
+    }
+    &__text {
+        margin: 0 auto 100px;
+        max-width: 70%;
+        text-align: center;
+        h1 {
+            margin-bottom: 50px;
+        }
+    }
+    .row {
+        img {
+            width: 330px;
+            height: 350px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+    .btn {
+        margin-top: 125px;
+    }
+}
+
+.infos {
+    background-color: $color-005;
+    .container {
+        padding: 120px 0 70px;
+        color: $color-001;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .row {
+            margin: 100px 0;
+        }
+        p {
+            font-size: $font-sm;
+        }
+    }
+}
+
+.promos {
+    &__flex {
+        max-width: 90%;
+        display: flex;
+        margin: 50px auto;
+        align-items: center;
+        &--content {
+            max-width: 36%;
+            p {
+                margin: 30px 0 50px;
+            }
+        }
+    }
+    div:nth-child(2) {
+        flex-direction: row-reverse;
+        margin-bottom: 0;
+    }
+}
+
+.pizza {
+    height: 1080px;
+    background-image: url('../../images/pizza-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $color-001;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    > img:nth-child(1) {
+        position: absolute;
+        bottom: 40%;
+    }
+    > img:nth-child(2) {
+        position: absolute;
+        top: 35%;
+        left: 20%;
+    }
+    h1 {
+        font-size: $font-xl;
+    }
+    p {
+        max-width: 40%;
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 300;
+        position: relative;
+        padding-bottom: 30px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 10px;
+            background-color: $color-001;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.testimonials {
+    padding: 200px 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h4 {
+        text-align: center;
+    }
+    p {
+        margin: 30px 0;
+    }
+    .citation {
+        font: $font-lg $font-002;
+        font-weight: 600;
+        text-align: center;
+        max-width: 70%;
+        margin: 150px 0 50px;
+    }
+    .author {
+        font: $font-md $font-002;
+        font-weight: 800;
+    }
+}
+
+.newsletter {
+    background-color: $color-005;
+    position: relative;
+    > img {
+        position: absolute;
+        width: 100%;
+        top: -5%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 235px 0 230px;
+        color: $color-001;
+        h5 {
+            font-weight: 700;
+        }
+        p {
+            max-width: 60%;
+            text-align: center;
+            font-size: $font-lg;
+            font-weight: 300;
+            margin: 50px 0;
+        }
+        form {
+            display: flex;
+            align-items: stretch;
+
+            input:nth-child(1) {
+                padding: 20px 80px 20px 50px;
+                border-radius: 50px 0 0 50px;
+                font: $font-md $font-002;
+                width: 600px;
+                &:focus,
+                &:active,
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+            input:nth-child(2) {
+                margin-left: -50px;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 330px 0;
+    .container {
+        max-width: 100%;
+        padding: 0 100px;
+    }
+    &__infos {
+        a {
+            background-color: $color-005;
+            border-radius: 50px;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $color-005;
+            transition: 0.4s;
+            &:hover {
+                background-color: $color-001;
+                i {
+                    color: $color-005;
+                }
+            }
+        }
+        p {
+            margin: 20px 0;
+        }
+        ul {
+            display: flex;
+            li {
+                margin-left: 10px;
+            }
+            i {
+                font-size: $font-md;
+                color: $color-001;
+                transition: 0.4s;
+            }
+        }
+    }
+    .col-2 {
+        ul {
+            margin-top: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            font: $font-sm $font-002;
+            color: $color-002;
+            font-weight: 400;
+        }
+    }
+}

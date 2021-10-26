@@ -1,0 +1,43 @@
+.btn {
+    color: $color-001;
+    font-family: $font-002;
+    font-size: $font-lg;
+    font-weight: 700;
+    letter-spacing: 5px;
+    border-radius: 50px;
+    width: fit-content;
+    width: -moz-fit-content;
+    background-color: $color-003;
+    padding: 20px 50px;
+    border: 5px solid $color-003;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        background-color: $color-001;
+        color: $color-003;
+    }
+}
+
+.btn-white {
+    border: 2px solid $color-001;
+    color: $color-003;
+    background-color: $color-001;
+    padding: 15px 35px;
+    letter-spacing: 0;
+    font-weight: 800;
+    &:hover {
+        background-color: $color-003;
+        color: $color-001;
+    }
+}
+
+.btn-grey {
+    padding: 10px 30px;
+    letter-spacing: 0;
+    background-color: $color-006;
+    border: 2px solid $color-006;
+    &:hover {
+        color: $color-006;
+        background-color: $color-001;
+    }
+}

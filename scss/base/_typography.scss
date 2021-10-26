@@ -1,0 +1,30 @@
+h1 {
+    font: $font-xxl $font-001;
+}
+
+h2 {
+    font: $font-lg $font-002;
+    font-weight: 700;
+}
+
+h3 {
+    font: $font-xl $font-002;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+h4 {
+    font: $font-xl $font-001;
+}
+
+h5 {
+    font: $font-xl $font-002;
+}
+
+h6 {
+    font: $font-lg $font-002;
+}
+
+p {
+    font: $font-md $font-002;
+}
